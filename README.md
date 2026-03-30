@@ -28,6 +28,7 @@ pocket_binding_prediction/
 │   ├── __init__.py              # empty — marks folder as Python module
 │   └── visualize.py             # ChimeraX auto-visualization script
 ├── evolution.py                 # mock PSSM generator
+├── consolidate_results.py.      # lists of amino acids involved in each detected site
 ├── predict.py                   # quick prediction script (score CSV only)
 └── main.py                      # full pipeline entry point (train + predict)
 ```
