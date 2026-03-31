@@ -3,7 +3,6 @@ rf_model.pkl
 data/fastas
 data/others
 data/pssms/
-data/subset_holo4k
 data/*.tar.gz
 __pycache__/
 results/
