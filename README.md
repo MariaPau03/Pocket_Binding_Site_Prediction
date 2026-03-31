@@ -441,15 +441,28 @@ All lookup tables are defined at module level in `features.py`:
 
 ## Results
 
-The following image shows the training results on the chen11 dataset, which took approximately one hour to complete.
+The pipeline was evaluated on a GLOBAL TEST SET consisting of over 1.8 million SAS points. Using a classification threshold of 0.1, the Random Forest model achieved the following metrics:
 
-![Training results](training_results.png)
+          label  threshold  n_samples  n_binding_points  accuracy  precision   recall  f1_score      auc    tp    fp      tn    fn  min_prob  mean_prob  max_prob
+GLOBAL TEST SET        0.1    1873479             84344  0.928401   0.304344 0.459179  0.366062 0.857512 38729 88525 1700610 45615       0.0   0.029722      0.97
 
-This protein-ligand binding site prediction model shows high reliability but follows a conservative prediction strategy. With a precision of 0.96, the model is extremely accurate when it identifies a binding site, meaning nearly all predicted pockets are likely to be biologically relevant. However, the lower recall of 0.46 indicates that it currently captures less than half of the total true binding surface, likely due to the significant class imbalance where binding points represent only 4.5% of the 2.8 million training samples. This conservative behavior results in a respectable F1-score of 0.62, suggesting that while the model misses some peripheral binding areas, it effectively identifies the core hotspots of the pockets.
+While the precision reflects the inherent difficulty of imbalanced surface data (where binding points are rare), the high AUC and Accuracy demonstrate that the model effectively prioritizes the correct geometric regions.
 
-In addition, the final pipeline fulfills the objective of the assignment: it takes a protein structure in `.pdb` format as input and predicts ligand-binding sites using a structure-based approach. For each analyzed protein, the program generates (i) a CSV file listing the amino acids involved in each detected pocket, for example `output/csv/121p_residues.csv`, and (ii) a visualization-ready PDB file such as `output/pockets/121p_pockets.pdb`, which can be opened in ChimeraX or PyMOL. The auxiliary files in `results/` (`pdbs/`, `logs/`, `cmd_scripts/`, and `screenshots/`) further support interpretation and presentation of the predicted binding sites.
+For every prediction run, the model generates:
 
-Therefore, the project delivers the requested outputs: protein-structure input, predicted ligand-binding sites, residue lists for each site, and files suitable for molecular visualization software.
+- Residue Lists: A CSV (e.g., 121p_residues.csv) identifying the exact amino acids forming the pocket.
+
+- Visual Assets: Native `.cxc` scripts and high-resolution screenshots providing a multi-modal view of the pocket's geometry, hydrophobicity and electrostatics.
+
+The pipeline was validated using known structures such as 121P (H-Ras) and 1AEK (Deoxycytidine Kinase).
+
+- Geometric Precision: As shown in the ribbon and surface visualizations, the predicted clusters (highlighted in black) align accurately with the deep geometric cavities of the proteins.
+
+- Chemical Complementarity: In both cases, the identified pockets show a polar/hydrophilic character (Cyan/White surface), which is functionally consistent with their respective ligands (GCP and dCK).
+
+- Electrostatic Validation: For the GDP/GTP binding site in 121P, the positive electrostatic potential (blue/white) perfectly complements the negatively charged phosphate groups of the ligand.
+
+![alt text](results-1.png)
 
 ---
 
