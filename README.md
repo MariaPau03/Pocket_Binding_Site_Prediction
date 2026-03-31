@@ -445,7 +445,7 @@ In addition, the final pipeline fulfills the objective of the assignment: it tak
 
 Therefore, the project delivers the requested outputs: protein-structure input, predicted ligand-binding sites, residue lists for each site, and files suitable for molecular visualization software.
 
-![binding_pocket_black.png](binding_pocket_black.png)
+![binding_pocket_black](binding_pocket_black.png)
 
 This is an example of the binding site prediction pockets is represented using ChimeraX.
 
