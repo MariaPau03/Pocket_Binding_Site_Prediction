@@ -1,0 +1,27 @@
+open "/Users/mariapaupijoan/Desktop/Master/2nd TERM/SBI-PYT/pocket_binding_prediction/data/subset_holo4k/1a3l.pdb"
+preset 'publication 2'
+surface /L:84 transparency 50
+color /L:84 0.90,0.18,0.18
+surface /L:85 transparency 50
+color /L:85 0.90,0.18,0.18
+surface /L:103 transparency 50
+color /L:103 0.90,0.18,0.18
+surface /L:164 transparency 50
+color /L:164 0.90,0.48,0.18
+surface /L:165 transparency 50
+color /L:165 0.90,0.48,0.18
+surface /L:166 transparency 50
+color /L:166 0.90,0.48,0.18
+surface /L:167 transparency 50
+color /L:167 0.90,0.48,0.18
+surface /H:88 transparency 50
+color /H:88 0.90,0.78,0.18
+surface /H:89 transparency 50
+color /H:89 0.90,0.78,0.18
+surface /H:107 transparency 50
+color /H:107 0.90,0.78,0.18
+surface /H:108 transparency 50
+color /H:108 0.90,0.78,0.18
+surface /H:109 transparency 50
+color /H:109 0.90,0.78,0.18
+view

@@ -103,6 +103,7 @@ alias chimerax='open -a /Applications/ChimeraX-1.11.1.app'
 chimerax output/pockets/121p_pockets.pdb
 
 # Or run the pre-generated ChimeraX script for a specific protein
+alias chimerax='open -a /Applications/ChimeraX-1.11.1.app'
 chimerax results/cmd_scripts/visualize_121p.cxc
 ```
 

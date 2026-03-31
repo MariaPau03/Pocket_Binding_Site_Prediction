@@ -5,7 +5,6 @@ data/others
 data/pssms/
 data/*.tar.gz
 __pycache__/
-results/
 output/
 
 
