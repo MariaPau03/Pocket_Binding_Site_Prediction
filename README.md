@@ -294,12 +294,9 @@ To have a single file with the lists of amino acids involved in each detected si
 
 4. __Automated Screenshots__ (`results/screenshots/`):
 If ChimeraX is installed in the standard path, the script can run in headless mode to execute commands and save `.png` images automatically. This is ideal for high-throughput processing of multiple proteins.
-Since the analysis is performed in an environment without a dedicated GPU, Mesa libraries must be installed to emulate graphics card instructions using the processor (CPU). This allows the system to handle protein shading and surface commands.
-`sudo apt-get install -y libgl1 libglx-mesa0 libosmesa6 libglu1-mesa`
-
-Even in headless mode, ChimeraX requires a framebuffer, or memory space, to act as a monitor for displaying the image before saving it. Xvfb (X Virtual Framebuffer) is used to simulate this graphical environment in RAM.
-`sudo apt-get install -y xvfb`
-
+Since the analysis is performed in an environment without a dedicated GPU, Mesa libraries must be installed to emulate graphics card instructions using the processor (CPU).
+This allows the system to handle protein shading and surface commands:`sudo apt-get install -y libgl1 libglx-mesa0 libosmesa6 libglu1-mesa`
+Even in headless mode, ChimeraX requires a framebuffer, or memory space, to act as a monitor for displaying the image before saving it. Xvfb (X Virtual Framebuffer) is used to simulate this graphical environment in RAM. `sudo apt-get install -y xvfb`
 The just run `xvfb-run --auto-servernum python main.py predict data/subset_holo4k/ --model my_model.pkl --threshold 0.4 --results_dir results/` and it should work
 
 ### Manual visualization in PyMOL
