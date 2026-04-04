@@ -1,0 +1,5 @@
+pocket_id,chain,residue_id,residue_name,center_x,center_y,center_z
+1,H,57,HIS,20.29,-8.73,18.688
+1,H,195,SER,14.449,-7.312,17.856
+1,H,213,VAL,13.538,-5.244,22.172
+1,H,214,SER,16.755,-7.661,23.918

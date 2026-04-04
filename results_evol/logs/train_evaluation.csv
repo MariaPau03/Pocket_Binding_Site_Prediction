@@ -1,0 +1,2 @@
+label,threshold,n_samples,n_binding_points,accuracy,precision,recall,f1_score,auc,tp,fp,tn,fn,min_prob,mean_prob,max_prob
+HELD-OUT TEST SET,0.1,566294,25605,0.9600119372622701,0.5315376747357654,0.9741847295450108,0.68779727848014,0.9939036947407881,24944,21984,518705,661,0.0,0.040359627684559606,0.99

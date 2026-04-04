@@ -1,0 +1,18 @@
+open "/gpfs/home/bsc/bsc278986/Documents/sim-bench/pocket_binding_prediction/data/1GUA.pdb"
+preset 'publication 2'
+surface /A:16 transparency 50
+color /A:16 0.90,0.18,0.18
+surface /A:17 transparency 50
+color /A:17 0.90,0.18,0.18
+surface /A:35 transparency 50
+color /A:35 0.90,0.18,0.18
+surface /A:57 transparency 50
+color /A:57 0.90,0.18,0.18
+surface /A:58 transparency 50
+color /A:58 0.90,0.18,0.18
+surface /A:59 transparency 50
+color /A:59 0.90,0.18,0.18
+surface /A:60 transparency 50
+color /A:60 0.90,0.18,0.18
+view
+exit

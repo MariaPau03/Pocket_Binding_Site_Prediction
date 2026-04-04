@@ -1,0 +1,16 @@
+open "/gpfs/home/bsc/bsc278986/Documents/sim-bench/pocket_binding_prediction/data/subset_holo4k/1ae8.pdb"
+preset 'publication 2'
+surface /H:57 transparency 50
+color /H:57 0.90,0.18,0.18
+surface /H:195 transparency 50
+color /H:195 0.90,0.18,0.18
+surface /H:196 transparency 50
+color /H:196 0.90,0.18,0.18
+surface /H:213 transparency 50
+color /H:213 0.90,0.18,0.18
+surface /H:214 transparency 50
+color /H:214 0.90,0.18,0.18
+surface /H:215 transparency 50
+color /H:215 0.90,0.18,0.18
+view
+exit

@@ -1,0 +1,5 @@
+pocket_id,chain,residue_id,residue_name,center_x,center_y,center_z
+1,B,109,GLU,71.025,19.822,6.918
+1,B,166,LEU,72.5,23.467,11.457
+1,B,170,CYS,67.191,21.472,10.172
+1,B,280,PHE,67.682,18.605,17.456
